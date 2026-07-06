@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Layout from "@/components/Layout/Layout";
 import PWAInstallPrompt from "@/components/PWAInstallPrompt";
 import Home from "@/pages/Home";

@@ -141,6 +141,7 @@ function supabaseProxyPlugin() {
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/personal-workbench/',
   build: {
     sourcemap: 'hidden',
   },
@@ -180,8 +181,8 @@ export default defineConfig({
         background_color: '#F0F7FF',
         display: 'standalone',
         orientation: 'portrait-primary',
-        start_url: '/',
-        scope: '/',
+        start_url: '/personal-workbench/',
+        scope: '/personal-workbench/',
         lang: 'zh-CN',
         dir: 'ltr',
         icons: [
@@ -215,21 +216,21 @@ export default defineConfig({
             name: '今日待办',
             short_name: '待办',
             description: '查看今日待办事项',
-            url: '/',
+            url: '/personal-workbench/',
             icons: [{ src: 'icon-192x192.png', sizes: '192x192' }],
           },
           {
             name: '读书空间',
             short_name: '读书',
             description: '查看书架和阅读笔记',
-            url: '/reading',
+            url: '/personal-workbench/#/reading',
             icons: [{ src: 'icon-192x192.png', sizes: '192x192' }],
           },
           {
             name: '科研工作台',
             short_name: '科研',
             description: '管理科研论文和笔记',
-            url: '/research',
+            url: '/personal-workbench/#/research',
             icons: [{ src: 'icon-192x192.png', sizes: '192x192' }],
           },
         ],
